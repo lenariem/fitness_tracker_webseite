@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalemate&display=swap');
 
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'blocks/promo';
+@import 'blocks/header.scss';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'blocks/titles';
 
 * {
 	margin: 0;
 	border: 0;
+    font-family: 'Museo Sans Cyrl', sans-serif;
 }
 *,*:before,*:after{
 	-moz-box-sizing: border-box;
@@ -27,4 +37,9 @@ button::-moz-focus-inner {border:0;}
 a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
 
