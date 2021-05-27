@@ -1,0 +1,37 @@
+.footer {
+    min-height: 180px;
+    background-color: $dark;
+    padding: 45px 0 50px 0;
+    color: #fff;
+
+    &__logo-img {
+        width: 55%;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+
+    &__social-img{
+        width: 8%;
+        height: 8%;
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .link {
+        display: block;
+        margin-top: 15px;
+        color: #fff;
+        font-size: 14px;
+    }
+    .call {
+        text-align: right;
+    }
+
+}
+
