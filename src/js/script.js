@@ -63,3 +63,63 @@ next.addEventListener('click', () => {
 });
  */
     
+
+//Timer
+const deadline = '2021-08-20';
+
+    function getTimeRemaining(endtime) {
+        //miliseconds left
+        const timeLeft = Date.parse(endtime) - Date.parse(new Date());
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        //% -modulo to leave only necessary value
+        const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((timeLeft / 1000 / 60) % 60);
+        const seconds = Math.floor((timeLeft / 1000) % 60);
+
+        return {
+            'total': timeLeft,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+    }
+
+    //to receive format with 0
+    function getZero(num) {
+        if (num >= 0 && num < 10) {
+            return `0${num}`;
+        } else {
+            return num
+        }
+    }
+
+
+    function setClock(selector, endtime) {
+        const timer = document.querySelector(selector);
+        const days = timer.querySelector('#days');
+        const hours = timer.querySelector('#hours');
+        const minutes = timer.querySelector('#minutes');
+        const seconds = timer.querySelector('#seconds');
+        
+        const timeInterval = setInterval(updateClock, 1000);
+
+        //to fix bug with blinking timer
+        updateClock();
+
+
+        function updateClock() {
+            const timeLeftNow = getTimeRemaining(endtime);
+
+            days.innerHTML = getZero(timeLeftNow.days);
+            hours.innerHTML = getZero(timeLeftNow.hours);
+            minutes.innerHTML = getZero(timeLeftNow.minutes);
+            seconds.innerHTML = getZero(timeLeftNow.seconds);
+
+            //to stop counting after deadline
+            if(timeLeftNow <= 0) {
+                clearInterval(timeInterval);
+            }
+        }
+    }
+    setClock('.timer', deadline);

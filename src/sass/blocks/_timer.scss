@@ -1,0 +1,81 @@
+.promotion .container {
+    display: flex;
+}
+
+.promotion {
+    padding: 100px 45px 240px 45px;
+    position: relative;
+
+    &__text {
+        width: 50%;
+    }
+
+    &__title {
+        text-align: center;
+        color: $main-color;
+    }
+
+    &__descr {
+        padding: 2%;
+        margin-top: 42px;
+        font-size: 20px;
+        line-height: 34px;
+        font-weight: 300;
+    }
+
+    &__timer {
+        width: 50%;
+
+        .title {
+            text-align: right;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 11%;
+        }
+    }
+}
+
+.promotion .bgc_y {
+    position: absolute;
+    width: 70%;
+    height: 499px;
+    background: rgba(243, 255, 222, 0.35);
+    z-index: -1;
+    top: -50px;
+    left: 0;
+}
+
+
+.promotion__descr span {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+
+.promotion__timer .timer {
+    margin-top: 3%;
+    padding-left: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.promotion__timer .timer__block {
+    width: 102px;
+    height: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin: 5px;
+}
+
+.promotion__timer .timer__block span {
+    display: block;
+    margin-top: 20px;
+    font-size: 56px;
+    font-weight: bold;
+}
