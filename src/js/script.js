@@ -271,7 +271,7 @@ $(document).ready(function () {
   getDynamicInformation("#weight");
   getDynamicInformation("#age");
 
-  // Smooth scroll and pageup
+  // Scroll to the top
   $(window).scroll(function () {
     if ($(this).scrollTop() > 1600) {
       $(".pageup").fadeIn();
