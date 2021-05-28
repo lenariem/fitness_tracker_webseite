@@ -1,36 +1,44 @@
 .footer {
-    min-height: 180px;
+    min-height: 150px;
     background-color: $dark;
     padding: 45px 0 50px 0;
     color: #fff;
 
     &__logo-img {
-        width: 55%;
+        width: 45%;
         border-radius: 100%;
         cursor: pointer;
     }
 
+    &__logo_text{
+        font-family: 'Stalemate', cursive;
+        color: #fff;
+        font-size: 2.5rem;
+    }
+
     &__social-img{
-        width: 8%;
-        height: 8%;
+        width: 25px;
+        height: 25px;
+        margin-right: 8%;
+        margin-top: 2%;
     }
     .container {
         height: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
     }
     .subtitle {
         font-size: 20px;
     }
     .link {
-        display: block;
-        margin-top: 15px;
         color: #fff;
         font-size: 14px;
     }
     .call {
         text-align: right;
+        line-height: 20px;
+        font-size: 3rem;
     }
 
 }
