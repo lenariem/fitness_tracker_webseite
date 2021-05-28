@@ -30,7 +30,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+4917612345678" class="header__phone">+49 (176) 12-34-56-78</a>
-                    <button class="button">request a call</button>
+                    <button class="button" data-modal="consultation">request a call</button>
                 </div>
             </header>
 
@@ -53,7 +53,7 @@
                     </div>
                 </div>
 
-                <button class="button button_main">I want a personal consultation</button>
+                <button class="button button_main" data-modal="consultation">I want a personal consultation</button>
                 <div class="promo__link">
                     or
                     <a href="#special_offer">GO TO CATALOG</a>
@@ -507,7 +507,7 @@
             <img src="img/feed_1.png" alt="Petra Weiss" class="feed__img">
             <div class="feed__text">
                 <div class="feed__subtitle">Petra Weiss</div>
-                <div class="feed__count">2 half marathons</div>
+                <div class="feed__count">1 half marathon</div>
                 <div class="feed__descr">I didn't know what to buy myself - I turned to the guys from Motion - they picked up a fitness tracker that suited my goals and financial capabilities.
                     After a while, I decided to update the gadget - without hesitation I turned to the same place.
                 <br><br>
@@ -522,7 +522,7 @@
             <img src="img/feed_3.png" alt="Maria Eggers" class="feed__img">
             <div class="feed__text">
                 <div class="feed__subtitle">Maria Eggers</div>
-                <div class="feed__count">1 half marathon</div>
+                <div class="feed__count">hobby runner</div>
                 <div class="feed__descr">For a long time I could not start running, because before that I started several times, but it became difficult and I quit. I heard from friends about Motion and running with heart rate control and decided to give it a try.
                 <br><br> 
                 I called, the guys asked about my goals and picked up a very interesting option with a discount! Now I run and enjoy running!
@@ -603,6 +603,41 @@
         </div>
     </div>
 </footer>
+
+<!-- MODAL -->
+<div class="overlay">
+    <div class="modal" id="consultation">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Just fill out the application form</div>
+        <div class="modal__descr">and we will call you back within 10 minutes</div>
+        <form class="feed-form feed-form_mt25" action="#">
+            <input name="name" required placeholder="Your Name" type="text"> 
+            <input name="phone" required placeholder="Your Phone Number" type="number"> 
+            <input name="email" required placeholder="Your E-mail" type="email"> 
+
+            <button class="button button_submit">Request a consultation</button>
+        </form>
+    </div>
+
+    <div class="modal" id="order">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Your Order:</div>
+        <div class="modal__descr">Fitness Tracker Polar FT1</div>
+        <form class="feed-form feed-form_mt25" action="#">
+            <input name="name" required placeholder="Your Name" type="text"> 
+            <input name="phone" required placeholder="Your Phone Number" type="number"> 
+            <input name="email" required placeholder="Your E-mail" type="email"> 
+
+            <button class="button button_submit">buy</button>
+        </form>
+    </div>
+
+    <div class="modal modal_mini" id="thanks">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subtitle">Thanks for your order!</div>
+        <div class="modal__descr">Our manager will contact you soon!</div>
+    </div>
+</div>
 
 
 
