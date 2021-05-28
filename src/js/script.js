@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 //Slider
 const slides = document.querySelectorAll(".offer__slide"),
   slider = document.querySelector(".offer__slider"),
@@ -283,3 +285,45 @@ $('.button_mini').each(function(i) {
     });
 });
 
+/* Form Validation */
+function validateForms(form){
+  $(form).validate({
+      rules: {
+          name: {
+              required: true,
+              minlength: 2,
+              maxlength: 25
+          },
+          phone: {
+            required: true,
+            maxlength: 25
+          },
+          email: {
+              required: true,
+              email: true,
+              maxlength: 35
+          }
+      },
+      messages: {
+          name: {
+              required: "Please, enter your name",
+              minlength: jQuery.validator.format("Enter {0} characters!"),
+              maxlength: jQuery.validator.format("Please, no more than {0} characters!")
+            },
+          phone: {
+            required:"Please, enter your Phone number"
+          } ,
+          email: {
+            required: "Please, enter your email",
+            email: "Email is not valid"
+          }
+      }
+  });
+};
+
+validateForms('#consultation-form');
+validateForms('#consultation form');
+validateForms('#order form');
+
+
+});
