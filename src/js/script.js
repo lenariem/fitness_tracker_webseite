@@ -52,9 +52,9 @@ $(document).ready(function () {
     plusSlides(1);
   });
 
-  /* document.addEventListener('keydown', () => {
+ /*  document.addEventListener('keydown', () => {
         if (key.code == 37) {
-            lplusSlides(-1);
+            plusSlides(-1);
         } else if (key.code == 39) {
             plusSlides(1);
         }
@@ -344,4 +344,12 @@ $(document).ready(function () {
   validateForms("#consultation-form");
   validateForms("#consultation form");
   validateForms("#order form");
+
+
+  //clear form after submit
+  window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
 });
