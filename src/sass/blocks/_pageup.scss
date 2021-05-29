@@ -9,3 +9,10 @@
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .pageup {
+        bottom: 30px;
+        right: 15px;
+    }
+}

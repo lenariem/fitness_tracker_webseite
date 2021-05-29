@@ -42,3 +42,11 @@
     }
 }
 
+@media (max-width: 768px) {
+    .footer {
+        &__logo-img {
+            width: 25%;
+            margin-left: 7%;
+        }
+    }
+}

@@ -80,3 +80,20 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .calculating {
+        &__field {
+            margin-top: 20px;
+            padding: 30px 0;
+        }
+        &__choose {
+            &_medium {
+                width: 543px;
+            }
+            &_big {
+                width: 630px;
+            }
+        }
+    }
+}

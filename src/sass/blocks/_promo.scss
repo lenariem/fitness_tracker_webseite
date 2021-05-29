@@ -54,3 +54,19 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .promo {
+        background: url(../img/you.jpg) center (center/cover) no-repeat;
+        &__subheader, &__icon {
+            color: black;
+            text-shadow: 1px 1px 2px #fff;
+        }
+        &__icon {
+            img{
+                background-color: rgba(128, 128, 128, 0.692);
+            }
+        }
+    }
+    
+}
