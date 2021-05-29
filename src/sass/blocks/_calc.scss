@@ -95,6 +95,22 @@
                 width: 630px;
             }
         }
+        &__divider {
+            width: 450px;
+            height: 1px;
+            margin: 40px auto;
+            background-color: rgba(0,0,0, .2);
+        }
+        &__total {
+            width: 450px;
+        }
+        &__result {
+            font-size: 18px;
+            font-weight: bold;
+            span {
+                font-size: 32px;
+            }
+        }
     }
 }
 
@@ -116,6 +132,47 @@
             }
             &_big {
                 width: 530px;
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .calculating {
+        padding: 50px 15px;
+        .title {
+            font-size: 1.5rem;
+        }
+        &__field {
+            width: 100%;
+            margin-top: 20px;
+            background: rgba(146, 242, 255, 0.15);
+            padding: 30px 0 40px 0;
+        }
+        &__choose {
+            &-item {
+                margin: 0 1%;
+                width: 100px;
+                padding: 0 5px;
+            }
+            &_medium {
+                width: 320px;               
+            }
+            &_big {
+                width: 370px;
+            }
+        }
+        &__divider {
+            width: 330px;
+        }
+        &__total {
+            width: 330px;
+        }
+        &__result {
+            font-size: 18px;
+            font-weight: bold;
+            span {
+                font-size: 32px;
             }
         }
     }

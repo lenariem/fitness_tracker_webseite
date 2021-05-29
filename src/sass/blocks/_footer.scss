@@ -68,7 +68,22 @@
         }
         .call {
             font-size: 16px;
-            
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .footer {
+        padding: 3%;
+        .subtitle {
+            font-size: 14px;
+            margin-bottom: 2%;
+        }
+        .call {
+           width:45%;
+        }
+        a.link {
+            font-size: 12px;
         }
     }
 }

@@ -49,3 +49,14 @@
         }
     }
 }
+
+@media (max-width: 440px) {
+    .advantages {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__item  { 
+            width: 50%;
+        }
+    }
+}

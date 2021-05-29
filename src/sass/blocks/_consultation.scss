@@ -23,3 +23,16 @@
         padding: 100px 10px 92px 20px;
     }
 }
+
+@media (max-width: 440px) {
+    .consultation {
+        h2 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
