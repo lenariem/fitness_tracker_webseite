@@ -57,7 +57,29 @@
 
 @media (max-width: 768px) {
     .promo {
+        padding: 2%;
         background: url(../img/you.jpg) center (center/cover) no-repeat;
+        &__wrapper {
+            margin-top: 30px;
+        }
+        &__header {
+            font-size: 32px;
+            line-height: 32px;
+        }
+        &__subheader {
+            margin-top: 14px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        &__icons {
+            margin-top: 35px;
+            width: 355px;
+        }
+        &__icon {
+            img {
+                margin-bottom: 10px;
+            }
+        }
         &__subheader, &__icon {
             color: black;
             text-shadow: 1px 1px 2px #fff;
@@ -68,5 +90,8 @@
             }
         }
     }
+}
+
+@media (max-width: 576px) {
     
 }
