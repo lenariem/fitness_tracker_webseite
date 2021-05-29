@@ -48,6 +48,20 @@ $(document).ready(function () {
     plusSlides(1);
   });
 
+  //switch sliders with keyboard
+  function eventKey(e) {
+    switch (e.keyCode) {
+      case 37:
+        plusSlides(-1)
+        break;
+
+      case 39:
+        plusSlides(1)
+        break;
+    }
+  }
+  addEventListener("keydown", eventKey);
+
   //TIMER//
   const deadline = "2021-08-20";
 
