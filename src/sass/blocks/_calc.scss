@@ -97,3 +97,26 @@
         }
     }
 }
+
+@media (max-width: 576px) {
+    .calculating {
+        padding: 100px 0 50px;
+        &__field {
+            margin-top: 20px;
+            padding: 30px 0;
+        }
+        &__choose {
+            &-item {
+                margin: 0 1%;
+                width: 150px;
+                padding: 0 5px;
+            }
+            &_medium {
+                width: 520px;               
+            }
+            &_big {
+                width: 530px;
+            }
+        }
+    }
+}

@@ -30,3 +30,22 @@
         }
     }
 }
+
+@media (max-width: 576px) {
+    .advantages {
+        padding: 70px 5px;
+        &__wrapper {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            text-align: center;
+         
+        }
+    }
+}

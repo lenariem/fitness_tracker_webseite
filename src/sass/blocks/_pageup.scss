@@ -16,3 +16,12 @@
         right: 15px;
     }
 }
+
+@media (max-width: 576px) {
+    .pageup {
+        display: none;
+        img {
+            display: none;
+        }
+    }
+}
