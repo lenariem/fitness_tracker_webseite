@@ -57,24 +57,23 @@ ul li{list-style: none;}
 	.container {
 		max-width: 650px;
 		padding: 1%;
-		
 	}
 }
 
 @media (max-width: 576px) {
 	.container {
     	max-width: 560px;
-		
 	}
 }
 
 @media (max-width: 440px) {
     .container {
     	max-width: 430px;
-		
 	}
 }
 
-@media (max-width: 325px) {
-    
+@media (min-width: 375px) {
+    .container {
+    	max-width: 350px;
+	}
 }

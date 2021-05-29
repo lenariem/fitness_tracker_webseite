@@ -144,22 +144,28 @@
             font-size: 1.5rem;
         }
         &__field {
-            width: 100%;
             margin-top: 20px;
-            background: rgba(146, 242, 255, 0.15);
             padding: 30px 0 40px 0;
         }
+       
         &__choose {
             &-item {
-                margin: 0 1%;
-                width: 100px;
-                padding: 0 5px;
+                width: 130px;
             }
             &_medium {
-                width: 320px;               
+                
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;              
             }
             &_big {
-                width: 370px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
         }
         &__divider {
@@ -176,4 +182,27 @@
             }
         }
     }
+}
+
+@media (min-width: 375px) {
+    .calculating { 
+    &__choose {
+        &_medium {
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;              
+        }
+        &_big {
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}	
 }

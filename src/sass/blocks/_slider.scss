@@ -81,25 +81,24 @@
 @media (max-width: 440px) {
     .offer__slider {
         width: 385px;
-        &-prev, &-next{
-            position: absolute;
-            top: 55%;
-            transform: translateY(-50%);
+        &-prev, &-next{ 
             left: -16px;
-            border: none;
-            background-color: #fff;
             z-index: 100;
-    
             img {
                 width: 31px;
                 height: 50px;
             }
         }
-    
         &-next {
             right: -16px;
             left: auto;
         }
     }
-    
 }
+
+@media (min-width: 375px) {
+    .offer__slider {
+        width: 300px;
+    }
+}
+
