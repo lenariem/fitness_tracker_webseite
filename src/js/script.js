@@ -314,7 +314,7 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please, enter your name",
-          minlength: jQuery.validator.format("Enter {0} characters!"),
+          minlength: jQuery.validator.format("Enter at least {0} characters!"),
           maxlength: jQuery.validator.format(
             "Please, no more than {0} characters!"
           )
