@@ -81,32 +81,42 @@
     }
 }
 
+@media (max-width: 996px) {
+    .calculating {
+        &__choose {
+            width: 100%;
+            &_medium {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;              
+            }
+            &_big {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .calculating {
         &__field {
             margin-top: 20px;
             padding: 30px 0;
         }
-        &__choose {
-            &_medium {
-                width: 543px;
-            }
-            &_big {
-                width: 630px;
-            }
-        }
         &__divider {
             width: 450px;
-            height: 1px;
-            margin: 40px auto;
-            background-color: rgba(0,0,0, .2);
         }
         &__total {
             width: 450px;
         }
         &__result {
             font-size: 18px;
-            font-weight: bold;
             span {
                 font-size: 32px;
             }
@@ -127,12 +137,6 @@
                 width: 150px;
                 padding: 0 5px;
             }
-            &_medium {
-                width: 520px;               
-            }
-            &_big {
-                width: 530px;
-            }
         }
     }
 }
@@ -152,57 +156,13 @@
             &-item {
                 width: 130px;
             }
-            &_medium {
-                
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;              
-            }
-            &_big {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
         }
         &__divider {
-            width: 330px;
+            width: 280px;
         }
         &__total {
-            width: 330px;
-        }
-        &__result {
-            font-size: 18px;
-            font-weight: bold;
-            span {
-                font-size: 32px;
-            }
+            width: 280px;
         }
     }
 }
 
-@media (min-width: 375px) {
-    .calculating { 
-    &__choose {
-        &_medium {
-            width: 45%;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;              
-        }
-        &_big {
-            width: 45%;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-}	
-}

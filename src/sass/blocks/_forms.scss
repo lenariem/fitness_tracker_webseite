@@ -24,3 +24,9 @@
         width: 250px;
     }
 }
+
+@media (max-width: 375px) {
+    .feed-form {
+        width: 200px;
+    }
+}

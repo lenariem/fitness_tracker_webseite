@@ -53,6 +53,20 @@ ul li{list-style: none;}
     margin: 0 auto;
 }
 
+@media (max-width: 996px) {
+	.container {
+		max-width: 890px;
+		padding: 1%;
+	}
+}
+
+@media (max-width: 850px) {
+	.container {
+		max-width: 750px;
+		padding: 1%;
+	}
+}
+
 @media (max-width: 768px) {
 	.container {
 		max-width: 650px;
@@ -72,8 +86,8 @@ ul li{list-style: none;}
 	}
 }
 
-@media (min-width: 375px) {
+ @media (max-width: 375px) {
     .container {
     	max-width: 350px;
 	}
-}
+} 

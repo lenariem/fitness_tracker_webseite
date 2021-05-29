@@ -87,3 +87,18 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+    .footer {
+        padding: 2%;
+        .subtitle {
+            font-size: 12px;
+        }
+        .call {
+           width:55%;
+        }
+        a.link {
+            font-size: 11px;
+        }
+    }
+}

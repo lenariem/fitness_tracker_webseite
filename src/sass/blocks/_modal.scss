@@ -49,12 +49,21 @@
     }
 }
 
-#consultation, #order, #thanks {
+#consultation, #order {
     display: none;
 }
 
 @media (max-width: 440px) {
     .modal {
         width: 320px;
+    }
+}
+
+@media (max-width: 375px) {
+    .modal {
+        width: 280px;
+        &__close {
+            right: -15px;
+        }
     }
 }
