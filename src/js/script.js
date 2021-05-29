@@ -1,14 +1,10 @@
 $(document).ready(function () {
-  //Slider
+  //SLIDER//
   const slides = document.querySelectorAll(".offer__slide"),
-    slider = document.querySelector(".offer__slider"),
     prev = document.querySelector(".offer__slider-prev"),
     next = document.querySelector(".offer__slider-next"),
     total = document.querySelector("#total"),
-    current = document.querySelector("#current"),
-    slidesWrapper = document.querySelector(".offer__slider-wrapper"),
-    width = window.getComputedStyle(slidesWrapper).width,
-    slidesField = document.querySelector(".offer__slider-inner");
+    current = document.querySelector("#current");
 
   let slideIndex = 1;
 
@@ -52,7 +48,7 @@ $(document).ready(function () {
     plusSlides(1);
   });
 
-  //Timer
+  //TIMER//
   const deadline = "2021-08-20";
 
   function getTimeRemaining(endtime) {
@@ -110,7 +106,7 @@ $(document).ready(function () {
   }
   setClock(".timer", deadline);
 
-  //Tabs with jquery
+  //TABS//
 
   $("ul.catalog__tabs").on(
     "click",
@@ -143,7 +139,7 @@ $(document).ready(function () {
   toggleSlide(".catalog-item__link");
   toggleSlide(".catalog-item__back");
 
-  /* Calculator */
+  //CALCULATOR//
   const result = document.querySelector(".calculating__result span");
 
   let sex, height, weight, age, ratio;
@@ -260,7 +256,7 @@ $(document).ready(function () {
   getDynamicInformation("#weight");
   getDynamicInformation("#age");
 
-  // Scroll to the top
+  // SCROLL TO THE TOP//
   $(window).scroll(function () {
     if ($(this).scrollTop() > 1600) {
       $(".pageup").fadeIn();
@@ -271,13 +267,15 @@ $(document).ready(function () {
 
   $("a[href^='#']").click(function () {
     const _href = $(this).attr("href");
-    $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+    $("html, body").animate({
+      scrollTop: $(_href).offset().top + "px"
+    });
     return false;
   });
 
   new WOW().init();
 
-  /* Modal */
+  // MODAL //
   $("[data-modal=consultation]").on("click", function () {
     $(".overlay, #consultation").fadeIn("slow");
   });
@@ -292,7 +290,7 @@ $(document).ready(function () {
     });
   });
 
-  /* Form Validation */
+  // FORM VALIDATION //
   function validateForms(form) {
     $(form).validate({
       rules: {
@@ -334,7 +332,7 @@ $(document).ready(function () {
   validateForms("#consultation form");
   validateForms("#order form");
 
-  //clear form after submit
+  //CLEAR FORM AFTER SUBMIT//
   window.onbeforeunload = () => {
     for (const form of document.getElementsByTagName("form")) {
       form.reset();
