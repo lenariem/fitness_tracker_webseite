@@ -287,8 +287,6 @@ $(document).ready(function () {
     return false;
   });
 
-  new WOW().init();
-
   // MODAL //
   $("[data-modal=consultation]").on("click", function () {
     $(".overlay, #consultation").fadeIn("slow");
@@ -303,6 +301,7 @@ $(document).ready(function () {
       $(".overlay, #order").fadeIn("slow");
     });
   });
+
 
   // FORM VALIDATION //
   function validateForms(form) {

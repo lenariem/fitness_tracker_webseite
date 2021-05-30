@@ -69,6 +69,18 @@
 @media (max-width: 650px) {
     .offer__slider {
         width: 500px;
+        &-prev, &-next{ 
+            left: -16px;
+            z-index: 100;
+            img {
+                width: 31px;
+                height: 50px;
+            }
+        }
+        &-next {
+            right: -16px;
+            left: auto;
+        }
     }
 }
 
@@ -87,18 +99,6 @@
 @media (max-width: 440px) {
     .offer__slider {
         width: 385px;
-        &-prev, &-next{ 
-            left: -16px;
-            z-index: 100;
-            img {
-                width: 31px;
-                height: 50px;
-            }
-        }
-        &-next {
-            right: -16px;
-            left: auto;
-        }
     }
 }
 
