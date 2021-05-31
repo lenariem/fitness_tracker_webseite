@@ -2,7 +2,7 @@
 ### Fitness trackers shop
 **to take a look please click this link:** 
 
-https://courses-shop-owl.herokuapp.com/
+https://motion-website.vercel.app/
 
 ### Technologies used: 
 * JavaScript;
@@ -14,7 +14,7 @@ https://courses-shop-owl.herokuapp.com/
 * Vercel;
 * responsive for different devices;
 * 8 of 10 on https://bettercodehub.com/;
-* according PageSpeed Insights: desktop , mobile 
+* according PageSpeed Insights: desktop 99 from 100, mobile 84 from 100
 
 ### User can:
 * watch the catalog;
@@ -22,5 +22,3 @@ https://courses-shop-owl.herokuapp.com/
 * fill and send a request for contact;
 * see the remaining time until the end of special offer;
 * read reviews from other customers
-
-
