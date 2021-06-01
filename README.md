@@ -8,7 +8,8 @@ https://motion-website.vercel.app/
 * JavaScript;
 * jQuery;
 * Gulp;
-* SASS;
+* SCSS;
+* BEM;
 * HTML;
 * Local Storage;
 * Vercel;
